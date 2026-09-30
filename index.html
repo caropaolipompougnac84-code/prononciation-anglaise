@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Prononciation anglaise — exercices oraux</title>
+<style>
+:root{--navy:#1e517d;--blue:#eaf3fb;--line:#a8c8e3;--ink:#192736;--accent:#f2b705;--good:#087f5b;--bad:#c92a2a}*{box-sizing:border-box}body{margin:0;background:#f6f8fa;color:var(--ink);font:17px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.wrap{max-width:1000px;margin:auto;padding:30px 18px 60px}header{background:var(--navy);color:#fff;padding:32px;border-radius:18px}h1{margin:0;font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.12}header p{margin:.7rem 0 0;opacity:.94}.notice{margin:20px 0;padding:14px 17px;background:#fff5d6;border-left:6px solid var(--accent);border-radius:8px}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0}.tabs button{border:1px solid var(--line);border-radius:999px;padding:9px 15px;background:#fff;color:var(--navy);font-weight:700;cursor:pointer}.tabs button.active{background:var(--navy);color:#fff}.panel{display:none}.panel.active{display:block}.card{background:#fff;border:1px solid #e0e7ee;border-radius:15px;padding:24px;margin:18px 0;box-shadow:0 2px 8px #19324a0d}h2{margin-top:0;color:var(--navy);font-size:1.5rem}h3{color:var(--navy)}.word{font-size:clamp(1.7rem,5vw,3rem);font-weight:800;text-align:center;padding:18px;background:var(--blue);border-radius:12px;margin:15px 0}.ipa{color:#536675;text-align:center;font-size:1.1rem}.actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:16px 0}button{font:inherit}button.primary,button.secondary{padding:11px 16px;border-radius:9px;font-weight:700;cursor:pointer}.primary{border:0;background:var(--navy);color:white}.secondary{border:1px solid var(--navy);background:white;color:var(--navy)}.feedback{text-align:center;min-height:1.6em;font-weight:700}.good{color:var(--good)}.bad{color:var(--bad)}.choices{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-top:15px}.choice{padding:14px;background:#fff;border:2px solid var(--line);border-radius:10px;text-align:left;cursor:pointer}.choice:hover{background:var(--blue)}.choice.correct{border-color:var(--good);background:#d3f9d8}.choice.wrong{border-color:var(--bad);background:#ffe3e3}.progress{height:12px;background:#e9eef2;border-radius:99px;overflow:hidden;margin:10px 0}.progress>span{display:block;height:100%;background:var(--accent);width:0;transition:.3s}.target{border-left:5px solid var(--accent);padding:13px 16px;background:#fff9e6;border-radius:7px}.recording{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.status{font-weight:700}.small{color:#536675;font-size:.94rem}.score{font-size:1.15rem;font-weight:800;color:var(--navy)}details{background:#f7fbff;border:1px solid var(--line);padding:12px 14px;border-radius:8px;margin-top:15px}summary{cursor:pointer;font-weight:700}footer{color:#536675;text-align:center;margin-top:28px;font-size:.9rem}@media(max-width:600px){.wrap{padding:16px 12px 40px}.card{padding:18px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header><h1>Prononciation anglaise — à l’oral</h1><p>Exercices interactifs A2 → B2 · anglais britannique standard</p></header>
+<p class="notice"><strong>Principe clé :</strong> l’orthographe anglaise ne suffit pas. Écoute, répète, enregistre-toi et compare ta production.</p>
+<nav class="tabs" aria-label="Niveaux"><button class="active" data-tab="a2">A2 · Sons</button><button data-tab="b1">B1 · Accent</button><button data-tab="b2">B2 · Rythme</button></nav>
+<section id="a2" class="panel active">
+<div class="card"><h2>1. Paires minimales : /ɪ/ ou /iː/</h2><p>Écoute le mot, puis choisis le son que tu entends. Réécoute autant que nécessaire.</p><div class="progress"><span id="a2bar"></span></div><p id="a2count" class="small"></p><div class="word" id="a2word">ship</div><p class="ipa" id="a2ipa">/ʃɪp/</p><div class="actions"><button class="primary" id="a2listen">🔊 Écouter</button></div><div class="choices"><button class="choice" data-answer="short">/ɪ/ — voyelle courte</button><button class="choice" data-answer="long">/iː/ — voyelle longue</button></div><p id="a2feedback" class="feedback" aria-live="polite"></p><details><summary>Conseil de production</summary><p>Pour /ɪ/, garde la voyelle brève et relâchée : <em>ship, sit, fill</em>. Pour /iː/, étire-la nettement : <em>sheep, seat, feel</em>. Évite de prononcer les deux comme un « i » français.</p></details></div>
+<div class="card"><h2>2. Le « th » : /θ/ ou /ð/</h2><p>Appuie doucement la langue entre les dents. Avec /θ/, tu souffles sans vibration ; avec /ð/, ta gorge vibre.</p><div class="word" id="thword">think</div><p class="ipa" id="thipa">/θɪŋk/</p><div class="actions"><button class="primary" id="thlisten">🔊 Écouter</button></div><div class="choices"><button class="choice" data-th="voiceless">/θ/ — sans voix</button><button class="choice" data-th="voiced">/ð/ — avec voix</button></div><p id="thfeedback" class="feedback" aria-live="polite"></p><button class="secondary" id="nextth">Mot suivant</button></div>
+</section>
+<section id="b1" class="panel">
+<div class="card"><h2>3. Accent de mot</h2><p>Écoute puis sélectionne la syllabe accentuée. Frappe dans les mains sur cette syllabe avant de répondre.</p><div class="word" id="stressword">banana</div><p class="ipa" id="stressipa">/bəˈnɑːnə/</p><div class="actions"><button class="primary" id="stresslisten">🔊 Écouter</button></div><div class="choices" id="stresschoices"></div><p id="stressfeedback" class="feedback" aria-live="polite"></p><button class="secondary" id="nextstress">Mot suivant</button></div>
+<div class="card"><h2>4. Formes faibles et schwa</h2><p>Répète la phrase naturellement. Les petits mots non accentués deviennent plus courts.</p><p class="target" id="weakSentence">I want <strong>to</strong> go <strong>to</strong> London.</p><p class="ipa" id="weakIpa">/aɪ wɒnt tə ɡəʊ tə ˈlʌndən/</p><div class="actions"><button class="primary" id="weaklisten">🔊 Écouter</button><button class="secondary" id="nextweak">Nouvelle phrase</button></div><details><summary>À entendre</summary><p><em>to</em> se réduit généralement à /tə/, <em>and</em> à /ən/, <em>for</em> à /fə/ et <em>can</em> à /kən/ lorsqu’ils ne portent pas l’accent.</p></details></div>
+</section>
+<section id="b2" class="panel">
+<div class="card"><h2>5. Shadowing : écoute, répète, enregistre</h2><p>Écoute le modèle, répète en imitant le rythme et les liaisons, puis enregistre une tentative. Ton enregistrement reste sur ton appareil : il n’est pas envoyé sur internet.</p><p class="target" id="shadowSentence">What are you doing?</p><p class="ipa" id="shadowIpa">/wɒt‿ə juː ˈduːɪŋ/ — souvent /wɒtʃə jə ˈduːɪŋ/</p><div class="actions"><button class="primary" id="shadowlisten">🔊 Écouter le modèle</button><button class="secondary" id="nextshadow">Nouvelle phrase</button></div><div class="recording"><button class="primary" id="record">⏺ Commencer l’enregistrement</button><button class="secondary" id="stop" disabled>⏹ Arrêter</button><span class="status" id="recordStatus">Prêt</span></div><audio id="playback" controls style="width:100%;margin-top:14px;display:none"></audio><details><summary>Grille d’auto-évaluation</summary><ul><li>Les sons difficiles sont-ils reconnaissables ?</li><li>Les mots importants reçoivent-ils l’accent ?</li><li>Les mots faibles sont-ils réduits ?</li><li>Les mots s’enchaînent-ils sans pauses inutiles ?</li><li>La phrase a-t-elle une mélodie naturelle ?</li></ul></details></div>
+<div class="card"><h2>6. Intonation</h2><p>Écoute les deux versions. Une question ouverte descend généralement ; une question fermée monte généralement.</p><div class="word">Where do you live? ↘<br>Do you live in Bordeaux? ↗</div><div class="actions"><button class="primary" id="intonation">🔊 Écouter les deux phrases</button></div></div>
+</section>
+<footer>Application basée sur la fiche « Exercices de prononciation anglaise — A2 à B2 » fournie. La synthèse vocale dépend de la voix anglaise disponible dans le navigateur.</footer>
+</main>
+<script>
+const voices=()=>speechSynthesis.getVoices(); speechSynthesis.onvoiceschanged=voices;
+function speak(text){
+  speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(text);
+  u.lang='en-GB';
+  u.rate=.78;
+  u.pitch=1;
+  const v=voices().find(v=>v.lang==='en-GB')||voices().find(v=>v.lang.startsWith('en'));
+  if(v)u.voice=v;
+  speechSynthesis.speak(u);
+}
+for(const b of document.querySelectorAll('.tabs button')) b.onclick=()=>{
+  document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));
+  b.classList.add('active');
+  document.getElementById(b.dataset.tab).classList.add('active');
+};
+
+const pairs=[['ship','/ʃɪp/','short'],['sheep','/ʃiːp/','long'],['sit','/sɪt/','short'],['seat','/siːt/','long'],['fill','/fɪl/','short'],['feel','/fiːl/','long'],['chip','/tʃɪp/','short'],['cheap','/tʃiːp/','long']];
+let pi=0,score=0;
+function showPair(){
+  const p=pairs[pi];
+  a2word.textContent=p[0];
+  a2ipa.textContent=p[1];
+  a2feedback.textContent='';
+  document.querySelectorAll('[data-answer]').forEach(b=>b.className='choice');
+  a2count.textContent=`Mot ${pi+1} sur ${pairs.length} · Score : ${score}`;
+  a2bar.style.width=`${(pi/pairs.length)*100}%`;
+}
+showPair();
+a2listen.onclick=()=>speak(pairs[pi][0]);
+document.querySelectorAll('[data-answer]').forEach(b=>b.onclick=()=>{
+  const ok=b.dataset.answer===pairs[pi][2];
+  b.classList.add(ok?'correct':'wrong');
+  if(ok){score++;a2feedback.innerHTML='<span class="good">✓ Correct !</span>';}
+  else a2feedback.innerHTML=`<span class="bad">Pas tout à fait.</span> Réponse : ${pairs[pi][2]==='short'?'/ɪ/':'/iː/'}`;
+  setTimeout(()=>{pi=(pi+1)%pairs.length;showPair();},900);
+});
+
+const th=[['think','/θɪŋk/','voiceless'],['this','/ðɪs/','voiced'],['three','/θriː/','voiceless'],['mother','/ˈmʌðə/','voiced'],['bath','/bɑːθ/','voiceless'],['they','/ðeɪ/','voiced']];
+let ti=0;
+function showTh(){
+  thword.textContent=th[ti][0];
+  thipa.textContent=th[ti][1];
+  thfeedback.textContent='';
+  document.querySelectorAll('[data-th]').forEach(b=>b.className='choice');
+}
+showTh();
+thlisten.onclick=()=>speak(th[ti][0]);
+nextth.onclick=()=>{ti=(ti+1)%th.length;showTh();};
+document.querySelectorAll('[data-th]').forEach(b=>b.onclick=()=>{
+  const ok=b.dataset.th===th[ti][2];
+  b.classList.add(ok?'correct':'wrong');
+  thfeedback.innerHTML=ok?'<span class="good">✓ Correct !</span>':`<span class="bad">Pas tout à fait.</span> Réponse : ${th[ti][2]==='voiceless'?'/θ/':'/ð/'}`;
+});
+
+const stress=[
+  ['banana','/bəˈnɑːnə/',['ba','NA','na'],1],
+  ['computer','/kəmˈpjuːtə/',['com','PU','ter'],1],
+  ['important','/ɪmˈpɔːtənt/',['im','POR','tant'],1],
+  ['photograph','/ˈfəʊtəɡrɑːf/',['PHO','to','graph'],0],
+  ['hotel','/həʊˈtel/',['ho','TEL'],1],
+  ['yesterday','/ˈjestədeɪ/',['YES','ter','day'],0]
+];
+let si=0;
+function showStress(){
+  const s=stress[si];
+  stressword.textContent=s[0];
+  stressipa.textContent=s[1];
+  stressfeedback.textContent='';
+  stresschoices.innerHTML='';
+  s[2].forEach((syl,i)=>{
+    const btn=document.createElement('button');
+    btn.className='choice';
+    btn.textContent=syl;
+    btn.onclick=()=>{
+      const ok=i===s[3];
+      btn.classList.add(ok?'correct':'wrong');
+      stressfeedback.innerHTML=ok?'<span class="good">✓ Correct !</span>':'<span class="bad">Essaie encore : écoute où la voix monte.</span>';
+    };
+    stresschoices.appendChild(btn);
+  });
+}
+showStress();
+stresslisten.onclick=()=>speak(stress[si][0]);
+nextstress.onclick=()=>{si=(si+1)%stress.length;showStress();};
+
+const weaks=[
+  ['I want <strong>to</strong> go <strong>to</strong> London.','I want to go to London.','/aɪ wɒnt tə ɡəʊ tə ˈlʌndən/'],
+  ['Can you wait <strong>for</strong> me?','Can you wait for me?','/kən ju weɪt fə miː/'],
+  ['Fish <strong>and</strong> chips','Fish and chips','/fɪʃ ən tʃɪps/'],
+  ['I can see it.','I can see it.','/aɪ kən siː ɪt/']
+];
+let wi=0;
+function showWeak(){
+  weakSentence.innerHTML=weaks[wi][0];
+  weakIpa.textContent=weaks[wi][2];
+}
+showWeak();
+weaklisten.onclick=()=>speak(weaks[wi][1]);
+nextweak.onclick=()=>{wi=(wi+1)%weaks.length;showWeak();};
+
+const shadows=[
+  ['What are you doing?','What are you doing?','/wɒt‿ə juː ˈduːɪŋ/ — souvent /wɒtʃə jə ˈduːɪŋ/'],
+  ['Would you like a cup of tea?','Would you like a cup of tea?','/wʊdʒə laɪk ə kʌp əv tiː/'],
+  ['I have to go now.','I have to go now.','/aɪ hæf tə ɡəʊ naʊ/'],
+  ['How much is it?','How much is it?','/haʊ mʌtʃ ɪz ɪt/']
+];
+let shi=0;
+function showShadow(){
+  shadowSentence.textContent=shadows[shi][0];
+  shadowIpa.textContent=shadows[shi][2];
+}
+showShadow();
+shadowlisten.onclick=()=>speak(shadows[shi][1]);
+nextshadow.onclick=()=>{shi=(shi+1)%shadows.length;showShadow();};
+
+intonation.onclick=()=>{
+  speak('Where do you live?');
+  setTimeout(()=>speak('Do you live in Bordeaux?'),2200);
+};
+
+let mediaRecorder,chunks=[];
+record.onclick=async()=>{
+  try{
+    const stream=await navigator.mediaDevices.getUserMedia({audio:true});
+    chunks=[];
+    mediaRecorder=new MediaRecorder(stream);
+    mediaRecorder.ondataavailable=e=>{if(e.data.size)chunks.push(e.data);};
+    mediaRecorder.onstop=()=>{
+      const blob=new Blob(chunks,{type:'audio/webm'});
+      playback.src=URL.createObjectURL(blob);
+      playback.style.display='block';
+      stream.getTracks().forEach(t=>t.stop());
+      recordStatus.textContent='Enregistrement prêt';
+    };
+    mediaRecorder.start();
+    record.disabled=true;
+    stop.disabled=false;
+    recordStatus.textContent='Enregistrement…';
+  }catch(e){
+    recordStatus.textContent='Micro refusé ou indisponible';
+  }
+};
+stop.onclick=()=>{
+  if(mediaRecorder&&mediaRecorder.state!=='inactive') mediaRecorder.stop();
+  record.disabled=false;
+  stop.disabled=true;
+};
+</script>
+</body>
+</html>
